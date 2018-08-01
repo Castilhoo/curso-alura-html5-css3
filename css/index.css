@@ -1,0 +1,345 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    display: block;
+    -webkit-perspective: 6px;
+            perspective: 6px;
+    -webkit-perspective-origin: 50% 160px;
+            perspective-origin: 50% 160px;
+}
+
+.foto-home {
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.subtitulo-principal {
+    text-align: center;
+    font-size: .4em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: initial;
+    margin: 0;
+}
+
+.banner-twitter {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: .4em;
+    color: #FFF;
+
+    text-transform: initial;
+    text-decoration: none;
+    text-align: center;
+
+    background-color: #3C1D3D;
+    border: .25rem solid black;
+
+    padding: 1em 0;
+    width: 14em;
+    line-height: 1;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transform-origin: 0 0;
+    transform: translate(6.4em, -2.4em) rotate(45deg);
+
+    -webkit-animation: aparece 1s;
+    animation: aparece 1s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+   
+}
+
+header {
+    position: relative;
+    
+}
+
+.palavras-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.palavra-home {
+    position: absolute;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: rgba(255, 127, 127, .5);
+    -webkit-animation: aparece 3s;
+    animation: aparece 3s;
+}
+
+@-webkit-keyframes aparece {
+    0% {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+
+.eficiencia {
+    top: 20%;
+    left: 75%;
+    transform: rotate(30deg)
+}
+
+.praticas {
+    top: 70%;
+    left: 20%;
+    transform: rotate(-15deg);
+}
+
+.limpo {
+    top: 45%;
+    left: 10%;
+    transform: rotate(-27deg);
+}
+
+.css3 {
+    top: 50%;
+    left: 30%;
+    transform: rotate(21deg);
+}
+
+.html5 {
+    top: 40%;
+    left: 80%;
+    transform: rotate(13deg);
+}
+
+.javascript {
+    top: 10%;
+    left: 60%;
+    transform: rotate(-10deg);
+}
+
+.acessibilidade {
+    top: 30%;
+    left: 25%;
+    transform: rotate(20deg);
+}
+
+.responsivo {
+    top: 15%;
+    left: 15%;
+    transform: rotate(-4deg);
+}
+
+.otimizacao {
+    top: 60%;
+    left: 70%;
+    transform: rotate(7deg);
+}
+
+.agilidade {
+    top: 10%;
+    left: 30%;
+    transform: rotate(-12deg)
+}
+
+.design {
+    top: 35%;
+    left: 65%;
+    transform: rotate(12deg);
+}
+
+.saudacao p {
+    color: #99A;
+    line-height: 1;
+    font-size: 1.5em;
+    padding: 2em;
+}
+.saudacao-inicio {
+    color: #889;
+    font-size: 3em;
+}
+.saudacao-ultima-linha {
+    text-align: right;
+    display: block;
+}
+.saudacao strong {
+    color: #000;
+    font-size: 2em;
+}
+.saudacao em {
+    color: #851944;
+    font-size: 3.5em;
+    display: inline-block;
+    transform: rotate(-5deg) skew(-10deg);
+    
+    -webkit-animation: flutua 1s infinite;
+    animation: flutua 1s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+
+    position: relative;
+}
+
+.saudacao em:hover, .saudacao em:focus {
+    animation-play-state: paused;
+}
+
+@-webkit-keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+
+
+.botao-index {
+    font-size: 1.25em;
+    text-decoration: none;
+    background-color: #851944;
+    color: #FFF;
+    border-radius: 30px;
+    border: .2em solid black;
+    box-shadow: 0 0 10px black, inset 0 0 5px white; 
+    width: 40ch;
+    display: block;
+    text-align: center;
+    margin: 2em auto;
+    padding: .5em;
+}
+
+.botao-index:hover, .botao-index:focus {
+    box-shadow: 0 0 20px #FA9;
+    background-color: #C54974;
+    transition: 0.5s;
+}
+
+.secao-inicio {
+    padding: 2em;
+}
+.secao-inicio h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+    text-shadow: 2px 2px black;
+}
+.trabalhos {
+    background-color: #3C1D3D;
+
+    background-image: linear-gradient(135deg, transparent, transparent 15px, rgba(0, 0, 0, .1) 16px, rgba(0, 0, 0, .1) 17px, transparent 17px, transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+
+    border-top: .5em solid #000;
+    border-bottom: .5em solid #000;
+}
+.trabalhos h2 {
+    color: #FFF;
+}
+.trabalhos ul {
+    display: flex;
+}
+
+.trabalhos li:first-child {
+    order: 2;
+    
+}
+
+.trabalhos li:nth-child(2) {
+    order: 1;
+}
+
+.trabalhos li:last-child {
+    order: 3;
+}
+
+.trabalhos li {
+    flex: 1;
+    border: 5px solid black;
+}
+
+.trabalhos li:hover {
+    transform: scale(1.2);
+    transition: 2s;
+}
+
+.trabalhos img {
+    width: 100%;
+    display: block;
+}
+.blog {
+    background-color: #999;
+    color: #FFF;
+    border-bottom: .5em solid #851944;
+    position: relative;
+    background-image: linear-gradient(135deg, transparent, transparent 15px, rgba(0, 0, 0, .1) 16px, rgba(0, 0, 0, .1) 17px, transparent 17px, transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+}
+
+.blog small {
+    position: relative;
+    top: -2em;
+}
+
+.blog li a {
+    color: #FCF;
+    padding: .5em;
+    display: block;
+    
+}
+
+.blog li {
+    width: 30%;
+}
+
+
+.blog .inicio-post {
+    display: none;
+    position: absolute;
+    top: 5em;
+    height: 8em;
+    left: 30%;
+    right: 4em;
+    background-color: #F2FFFC;
+    color: #000;
+    padding: 1.5em;
+}
+
+.blog ol a:hover, .blog a:focus {
+    background-color: #F2FFFC;
+    color: #F26;
+}
+
+.blog a:hover + .inicio-post, .blog a:focus + .inicio-post {
+    display: block;
+}
+
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 1em;
+}
+
+footer h2 {
+    font-size: 3em;
+}
+footer a {
+    color: #F99;
+    
+}
+main {
+    width: 100%;
+    padding-bottom: 0;
+    float: none;
+}
